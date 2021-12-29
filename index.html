@@ -137,17 +137,63 @@
     <div class="contenedor" id='proyectos'>
         <div class="subtitulo">Proyectos</div>
         <div class="botonesTipos">
-            <button>IA</button>
-            <button>Diseño web</button>
-            <button>Escritos</button>
-            <button>Dibujos</button>
+            <button id='ia' onclick="mostrarIA();">IA</button>
+            <button id='web' onclick="mostrarWeb();">Diseño web</button>
+            <button id='escritos' onclick="mostrarEscritos();">Escritos</button>
+            <button id='dibujos' onclick="mostrarDibujos();">Dibujos</button>
         </div>
-        <div class="grid-proyectos">
-            <div class="item-proyecto">KANAN</div>
-            <div class="item-proyecto">IKAL</div>
-            <div class="item-proyecto">MichiGAN</div>
-            <div class="item-proyecto">Tenolli</div>
-            <div class="item-proyecto">SIAFI</div>
+
+        <div class="grid-proyectos" id='ia-proyectos'>
+            <div class="item-proyecto textoP">KANAN</div>
+            <div class="item-proyecto textoP">IKAL</div>
+            <div class="item-proyecto textoP">MichiGAN</div>
+            <div class="item-proyecto textoP">Tenolli</div>
+        </div>
+
+        <div class="grid-proyectos" id='web-proyectos'>
+            <div class="item-proyecto textoP">SIAFI</div>
+        </div>
+
+        <div class="grid-proyectos" id='escritos-proyectos'>
+            <div class="item-proyecto">
+                <img src="assets/img/Escritos/1.png" alt="">
+            </div>
+            <div class="item-proyecto">
+                <img src="assets/img/Escritos/2.jpg" alt="">
+            </div>
+            <div class="item-proyecto">
+                <img src="assets/img/Escritos/3.png" alt="">
+            </div>
+            <div class="item-proyecto">
+                <img src="assets/img/Escritos/4.png" alt="">
+            </div>
+            <div class="item-proyecto">
+                <img src="assets/img/Escritos/5.png" alt="">
+            </div>
+        </div>
+
+        <div class="grid-proyectos" id='dibujos-proyectos'>
+            <div class="item-proyecto">
+                <img src="assets/img/Dibujos/Dibujo2.jpg" alt="">
+            </div>
+            <div class="item-proyecto">
+                <img src="assets/img/Dibujos/Elias.jpg" alt="">
+            </div>
+            <div class="item-proyecto">
+                <img src="assets/img/Dibujos/ImagenFinal.PNG" alt="">
+            </div>
+            <div class="item-proyecto">
+                <img src="assets/img/Dibujos/Llaveros.PNG" alt="">
+            </div>
+            <div class="item-proyecto">
+                <img src="assets/img/Dibujos/Personaje2.png" alt="">
+            </div>
+            <div class="item-proyecto">
+                <img src="assets/img/Dibujos/Principe Oso.png" alt="">
+            </div>
+            <div class="item-proyecto">
+                <img src="assets/img/Dibujos/TeAmo.png" alt="">
+            </div>
         </div>
         
 

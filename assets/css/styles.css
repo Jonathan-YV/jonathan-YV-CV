@@ -317,8 +317,13 @@ progress {
 .botonesTipos button{
     background-color: var(--color-fondo);
     font-size: var(--tamaño-texto);
-    color: white;
+    color: var(--gris-claro);
     border: none;
+    cursor: pointer;
+}
+
+#ia{
+    color: var(--rosa);
 }
 
 .grid-proyectos{
@@ -333,10 +338,48 @@ progress {
 
 .item-proyecto{
     background-color: var(--rosa);
-    padding: 30px;
-    color: black;
-    font-size: var(--tamaño-texto);
+    border-radius: 10px;
 }
+
+.item-proyecto:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+    filter: brightness(1.1);
+
+}
+
+.textoP{
+    color: var(--gris);
+    font-size: var(--tamaño-texto);
+    padding: 30px;
+}
+
+.item-proyecto img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+
+#ia-proyectos{
+    display: grid;
+}
+
+#web-proyectos{
+    display: none;
+}
+
+#escritos-proyectos{
+    display: none;
+}
+
+#dibujos-proyectos{
+    display: none;
+}
+
+
 
 /* Contacto */
 
@@ -350,7 +393,6 @@ progress {
     color: white;
     margin-right: 40px;
     margin-left: auto;
-    z-index: -15;
 }
 
 .caja-formulario form{
@@ -422,7 +464,7 @@ progress {
     left: 50px;
     top: 100px;
 
-    z-index: -10;
+    z-index: -1;
     
 }
 
@@ -466,7 +508,7 @@ progress {
         flex-direction: column;
         background-color: var(--rosa);
         position: fixed;
-        z-index: 10;
+        z-index: 100;
         top: 80px;
         left: 0;
         width: 100%;

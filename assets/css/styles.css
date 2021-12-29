@@ -3,44 +3,54 @@
 :root{
     --titulos:'Electrolize', sans-serif;
     --textos: 'Comfortaa', cursive;
+
+    --blanco: rgb(245, 245, 245);
     --rosa: #CE67FF;
     --gris: #202020;
     --gris-claro: #393939;
-    --color-fondo: rgb(14, 14, 14);
-    --tamaño-titulos: 75px;
-    --tamaño-subtitulos: 36px;
-    --tamaño-texto: 26px;
+    --fondo: rgb(14, 14, 14);
+
+
+
+    --tam-titulos: 4.5rem;
+    --tam-subtitulos: 2.5rem;
+    --tam-texto: 1.5rem;
+    --tam-pequeño: 1rem;
 }
 
 *{
     margin: 0;
 }
 
-body{
-    font-family: var(--textos);
-    background-color: var(--color-fondo);
+html{
+    font-size: 16px;
 }
 
-/* Navbar */
+body{
+    font-family: var(--textos);
+    background-color: var(--fondo);
+}
+
+/*-------------------------------------- Navbar --------------------------------------*/
 
 .header{
     background-color: rgba(0, 0, 0, 0.616);
-    height: 80px;
+    height: 5rem;
     position: fixed;
     width: 100%;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
-    max-width: 1500px;
+    max-width: 94rem;
     margin:0 auto;
 }
 
 .nav-link{
-    color: white;
+    color: var(--blanco);
     text-decoration: none;
 }
 
@@ -49,7 +59,7 @@ body{
 }
 
 .logo img{
-    width: 80px;
+    width: 5rem;
 }
 
 .nav-menu{
@@ -59,9 +69,9 @@ body{
 }
 
 .nav-menu-item{
-    font-size: 16px;
+    font-size: var(--tam-pequeño);
     margin: 0 10px;
-    line-height: 80px;
+    line-height: 5rem;
     width: max-content;
 }
 
@@ -76,10 +86,10 @@ body{
 }
 
 .nav-toggle{
-    color: white;
+    color: var(--blanco);
     background: none;
     border:none;
-    font-size: 30px;
+    font-size: 2rem;
     padding: 0 20px;
     line-height: 60px;
     cursor: pointer;
@@ -98,7 +108,7 @@ body{
 
 
 
-/* Inicio */
+/*-------------------------------------- Inicio --------------------------------------*/
 
 .imagenInicio{
     padding-top: 80px;
@@ -108,7 +118,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: var(--blanco);
     z-index: -15;
 }
 
@@ -137,7 +147,7 @@ body{
 
 .nombre-tituto{
     font-family: var(--titulos);
-    font-size: var(--tamaño-titulos);
+    font-size: var(--tam-titulos);
     padding-top: 80px;
     
     max-width: 700px;
@@ -146,7 +156,7 @@ body{
 
 .puesto-inicio{
     color: var(--rosa);
-    font-size: var(--tamaño-subtitulos);
+    font-size: var(--tam-subtitulos);
     max-width: 500px;
     padding-top: 10px;
     
@@ -162,12 +172,12 @@ body{
 
 .redes-sociales{
     padding-top: 35px;
-    font-size: 35px;
+    font-size: 2.5rem;
 }
 
 .redes-sociales a{
     text-decoration: none;
-    color: white;
+    color: var(--blanco);
 }
 
 .redes-sociales a:hover{
@@ -189,20 +199,21 @@ body{
 }
 
 
-/* Sobre mí */
+/*-------------------------------------- Sobre mí --------------------------------------*/
 
 .contenedor{
     width: 100%;
-    color: white;
+    color: var(--blanco);
     max-width: 1500px;
     margin:0 auto;
     padding-top: 120px; 
 }
 
 .subtitulo{
-    font-size: var(--tamaño-subtitulos);
+    font-family: var(--titulos);
+    font-size: var(--tam-subtitulos);
     margin-left: 40px;
-    color: white;
+    color: var(--blanco);
 }
 
 .cuadroUno{
@@ -220,12 +231,12 @@ body{
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
-    width: 100%;
+    width: auto;
     height: auto;
     padding: 30px;
     border-radius: 20px;
     background-color: var(--gris) ;
-    font-size: var(--tamaño-texto);
+    font-size: var(--tam-texto);
     
 }
 
@@ -239,7 +250,7 @@ body{
 }
 
 .cuadroDos table{
-    font-size: var(--tamaño-texto);
+    font-size: var(--tam-texto);
 }
 
 .puesto{
@@ -253,7 +264,7 @@ table img{
 }
 
 
-/* Habilidades */
+/*-------------------------------------- Habilidades --------------------------------------*/
 
 .cuadros{
     display: flex;
@@ -261,9 +272,9 @@ table img{
 
 .tecnicas,
 .blandas{
-    width: 100%;
+    width: 50%;
     height: auto;
-    font-size: var(--tamaño-texto);
+    font-size: var(--tam-texto);
     margin: 40px;
     padding: 30px;
     background-color: var(--gris);
@@ -307,16 +318,16 @@ progress {
 
 
 
-/* Proyectos */
+/*-------------------------------------- Proyectos --------------------------------------*/
 
 .botonesTipos{
     margin: 40px;
-    font-size: var(--tamaño-texto);
+    font-size: var(--tam-texto);
 }
 
 .botonesTipos button{
-    background-color: var(--color-fondo);
-    font-size: var(--tamaño-texto);
+    background-color: var(--fondo);
+    font-size: var(--tam-texto);
     color: var(--gris-claro);
     border: none;
     cursor: pointer;
@@ -346,18 +357,19 @@ progress {
     transition: 0.5s;
     filter: brightness(1.1);
     cursor: pointer;
+    color: var(--blanco);
 
 }
 
 .textoP{
     color: var(--gris);
-    font-size: var(--tamaño-texto);
+    font-size: var(--tam-texto);
     padding: 30px;
 }
 
 .textoE{
     color: var(--gris);
-    font-size: var(--tamaño-texto);
+    font-size: var(--tam-texto);
     padding: 30px;
     text-decoration: none;
 }
@@ -422,14 +434,14 @@ progress {
 }
 
 
-/* Contacto */
+/*-------------------------------------- Contacto --------------------------------------*/
 
 .caja-formulario{
     background-color: var(--gris);
     margin-right: 40px;
     width: 950px;
     border-radius: 20px;
-    color: white;
+    color: var(--blanco);
     margin-right: 40px;
 
     border-top-left-radius: 0;
@@ -454,8 +466,8 @@ progress {
     border: none;
 
     padding: 10px 10px;
-    color: white;
-    font-size: 20px;
+    color: var(--blanco);
+    font-size: var(--tam-pequeño);
     font-family: var(--textos);
 }
 
@@ -466,8 +478,8 @@ progress {
     border: none;
 
     padding: 10px 10px;
-    color: white;
-    font-size: 20px;
+    color: var(--blanco);
+    font-size: var(--tam-pequeño);
     font-family: var(--textos);
 }
 
@@ -480,14 +492,14 @@ progress {
 
 
 .separacionF button{
-    width: 300px;
+    width: 40%;
     background-color: var(--rosa);
     font-family: var(--textos);
     border-radius: 20px;
     border: none;
-    color: white;
+    color: var(--blanco);
     padding: 10px 0;
-    font-size: 20px; 
+    font-size: var(--tam-pequeño); 
     
 }
 
@@ -516,11 +528,11 @@ progress {
 }
 
 .cajaInformacion td{
-    font-size: 20px;
+    font-size: var(--tam-pequeño);
 }
 
 .tam-con{
-    font-size: 40px;
+    font-size: var(--tam-subtitulos);
 }
 
 .puestoC{
@@ -529,7 +541,7 @@ progress {
     padding-left: 10PX;
 }
 
-/* footer */
+/*-------------------------------------- footer --------------------------------------*/
 
 .footer{
     width: 100%;
@@ -542,22 +554,35 @@ progress {
 
 
 
+
+/*-------------------------------------- Media --------------------------------------*/
+
 @media (max-width: 768px){
+
+    html{
+        font-size: 12px;
+    }
+
     .nav-menu{
         flex-direction: column;
         background-color: var(--rosa);
         position: fixed;
         z-index: 100;
-        top: 80px;
+        top: 5rem;
         left: 0;
         width: 100%;
         align-items: center;
         padding: 20px 0;
+        
 
-        height: calc(100% - 80px);
+        height: auto;
         overflow-y: auto;
 
         left: 100%;
+    }
+
+    .nav-menu-link{
+        font-size: 2rem;
     }
 
     .nav-menu-link:hover{
@@ -574,7 +599,8 @@ progress {
     }
 
     .nav-inicio{
-        color: white;
+        color: var(--blanco);
+        
     }
 
     .nav-contacto{
@@ -588,7 +614,10 @@ progress {
 
     .foto-perfil img{
         width: 15rem;
-        margin-top: 100px;
+    }
+
+    .centrar{
+        margin-top: 50px;
     }
 
     .cuadros{
@@ -597,17 +626,19 @@ progress {
 
     .tecnicas,
     .blandas{
-    width: 85%;
+    width: auto;
     height: auto;
-    font-size: var(--tamaño-texto);
+    font-size: var(--tam-texto);
     margin: 0;
     margin-left: 40px;
+    margin-right: 40px;
     margin-top: 20px;
     padding: 10px;
     }
 
     .ambasCajas{
         flex-direction: column;
+        margin-top: 0;
     }
 
     .cajaInformacion{
@@ -615,16 +646,14 @@ progress {
         margin: 40px 40px 0 40px;
         width: auto;
         height: auto;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-radius: 10px 10px 0px 0px;
         padding: 30px;
     }
 
     .caja-formulario{
         width: auto;
         margin: 0 40px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        border-radius: 0px 0px 10px 10px;
         
     }
 
@@ -635,8 +664,49 @@ progress {
         padding-right: 30px;
     }
 
+    .img-show{
+        max-width: 90%;
+    }
+
 
     
+
+}
+
+
+@media (max-width: 576px){
+    html{
+        font-size: 10px;
+    }
+
+    .centrar{
+        margin-top: 40px;
+    }
+
+    .nombre-tituto{
+        padding-top: 30px;
+    }
+
+    .cuadroUno{
+        flex-direction: column-reverse;
+    }
+
+    .cuadroDos{
+        padding: 10px;
+    }
+
+    .cuadroDos td{
+        padding: 10px;
+    }
+
+    .imagenSobre{
+        margin-left: 0;
+    }
+
+    .tecnicas,
+    .blandas{
+        margin-right: 40px;
+    }
 
 }
 

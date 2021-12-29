@@ -345,6 +345,7 @@ progress {
     transform: scale(1.02);
     transition: 0.5s;
     filter: brightness(1.1);
+    cursor: pointer;
 
 }
 
@@ -352,6 +353,13 @@ progress {
     color: var(--gris);
     font-size: var(--tamaño-texto);
     padding: 30px;
+}
+
+.textoE{
+    color: var(--gris);
+    font-size: var(--tamaño-texto);
+    padding: 30px;
+    text-decoration: none;
 }
 
 .item-proyecto img{
@@ -380,29 +388,62 @@ progress {
 }
 
 
+.container-img{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #cf67ff7c ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    transition: transform 0.2s ease-in;
+    transform: translateX(-100%);
+}
+
+.move{
+    transform: translateX(0%);
+}
+
+.img-show{
+    max-height: 80%;
+    display: block;
+    object-fit: cover;
+
+    transform: scale(0);
+    transition: transform .2s .4s;
+}
+
+.show{
+    transform: scale(1);
+}
+
 
 /* Contacto */
 
 .caja-formulario{
     background-color: var(--gris);
-    margin-left: 40px;
     margin-right: 40px;
-    margin-top: 40px;
     width: 950px;
     border-radius: 20px;
     color: white;
     margin-right: 40px;
-    margin-left: auto;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .caja-formulario form{
     margin: 0;
     padding: 40px;
-    padding-left: 80px;
 }
 
 .separacionF{
     padding: 10px;
+    text-align: right;
 }
 
 
@@ -436,9 +477,6 @@ progress {
     justify-content: space-between;
 }
 
-.separacionF{
-    text-align: right;
-}
 
 
 .separacionF button{
@@ -454,18 +492,17 @@ progress {
 }
 
 .cajaInformacion{
-    position: relative;
     width: 450px;
-    height: 350px;
+    height: auto;
     background-color: var(--rosa);
-    border-radius: 20px;
+    margin-left: 40px;
+    
     padding: 30px;
     padding-top: 70px;
-    left: 50px;
-    top: 100px;
 
-    z-index: -1;
-    
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
 }
 
 .cajaInformacion table{
@@ -474,6 +511,8 @@ progress {
 
 .ambasCajas{
     display: flex;
+    margin-top: 40px;
+    justify-content: center;
 }
 
 .cajaInformacion td{

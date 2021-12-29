@@ -57,3 +57,29 @@ function mostrarDibujos(){
     document.getElementById('dibujos').style.color = 'var(--rosa)';
 }
 
+/* Mostrar imagenes */
+
+const images = document.querySelectorAll('.imgP');
+const containerImage = document.querySelector('.container-img');
+const imageC = document.querySelector('.img-show');
+
+images.forEach(image =>{
+    image.addEventListener("click",()=>{
+        addImage(image.getAttribute('src'),image.getAttribute('alt'));
+    })
+})
+
+const addImage = (srcImage,altImage)=>{
+    containerImage.classList.toggle("move")
+    imageC.classList.toggle("show")
+    imageC.src = srcImage;
+    copy.innerHTML = altImage;
+}
+
+containerImage.addEventListener("click", ()=>{
+    containerImage.classList.toggle("move")
+    imageC.classList.toggle("show")
+})
+
+
+

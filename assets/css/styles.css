@@ -90,10 +90,11 @@ body{
     background: none;
     border:none;
     font-size: 2rem;
-    padding: 0 20px;
-    line-height: 60px;
+    
+    line-height: 5rem;
     cursor: pointer;
     display: none;
+    margin-right: 40px;
 }
 
 .nav-inicio{
@@ -102,7 +103,7 @@ body{
 
 .nav-contacto{
     border: 2px solid var(--rosa);
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 
@@ -231,6 +232,7 @@ body{
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
+    
     width: auto;
     height: auto;
     padding: 30px;
@@ -251,6 +253,7 @@ body{
 
 .cuadroDos table{
     font-size: var(--tam-texto);
+    
 }
 
 .puesto{
@@ -276,7 +279,7 @@ table img{
     height: auto;
     font-size: var(--tam-texto);
     margin: 40px;
-    padding: 30px;
+    padding: 10px 30px 30px 30px;
     background-color: var(--gris);
     border-radius: 20px;
 }
@@ -504,7 +507,7 @@ progress {
 }
 
 .cajaInformacion{
-    width: 450px;
+    width: 300px;
     height: auto;
     background-color: var(--rosa);
     margin-left: 40px;
@@ -518,7 +521,8 @@ progress {
 }
 
 .cajaInformacion table{
-    width: 100%;
+    width: auto;
+    margin: auto auto;
 }
 
 .ambasCajas{
@@ -545,7 +549,7 @@ progress {
 
 .footer{
     width: 100%;
-    height: 100px;
+    height: 30px;
     margin-top: 100px;
     background-size: cover ;
     background-image: url(https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/article/602267985bafe804da50c09b/hechas-estrellas_0.jpg);
@@ -620,6 +624,24 @@ progress {
         margin-top: 50px;
     }
 
+    .columna{
+        margin-right: 40px;
+    }
+
+    .nombre-tituto{
+        text-align: center;     
+    }
+
+    .puesto-inicio{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .redes-sociales{
+        width: max-content;
+        margin: 0 auto;
+    }
+
     .cuadros{
         flex-direction: column;
     }
@@ -633,7 +655,7 @@ progress {
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 20px;
-    padding: 10px;
+    padding: 10px 20px 30px 20px;
     }
 
     .ambasCajas{
@@ -649,6 +671,11 @@ progress {
         border-radius: 10px 10px 0px 0px;
         padding: 30px;
     }
+
+    .puestoC{
+        padding: 10px 0px 10px 10px;
+    }
+
 
     .caja-formulario{
         width: auto;

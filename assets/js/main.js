@@ -9,19 +9,17 @@ navToggle.addEventListener("click", () => {
 
 /* Animacion inicio */
 
-
+let lienzo = document.querySelector('.imagenInicio');
 
 function crearEstrellas(){
-  const lienzo = document.querySelector('.imagenInicio');
   const estrella = document.createElement('span');
-
 
   let size = Math.random() * 4;
   estrella.style.width = 5 + size + 'px';
   estrella.style.height = 5 + size + 'px';
 
 
-  estrella.style.left= (Math.random() * lienzo.clientWidth - size) + 'px';
+  estrella.style.left= (Math.random() * lienzo.clientWidth - size - 20) + 'px';
   estrella.style.top= (Math.random() * lienzo.clientHeight - size) + 'px';
 
   lienzo.appendChild(estrella);
@@ -31,7 +29,13 @@ function crearEstrellas(){
 
 }
 
-setInterval(crearEstrellas,20)
+if (lienzo.clientWidth <= 576 ){
+  setInterval(crearEstrellas,60)
+} else if(lienzo.clientWidth <= 768){
+  setInterval(crearEstrellas,30)
+} else{
+  setInterval(crearEstrellas,20)
+}
 
 
 /* Ocultar proyectos */

@@ -4,9 +4,12 @@ const loader = document.querySelector('.carga');
 const scrollY = document.querySelector('body');
 
 setTimeout(() =>{
+  scrollY.style.overflowY = 'visible'
+},3000)
+
+setTimeout(() =>{
   loader.style.display = 'none'
-scrollY.style.overflowY = 'visible'
-},3500)
+},4400)
 
 
 /* Menu de hamburgues */

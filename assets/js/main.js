@@ -7,6 +7,29 @@ navToggle.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
 });
 
+/* Animacion inicio */
+
+function crearEstrellas(){
+  const lienzo = document.querySelector('.imagenInicio');
+  const estrella = document.createElement('span');
+
+  let size = Math.random() * 4;
+  estrella.style.width = 5 + size + 'px';
+  estrella.style.height = 5 + size + 'px';
+
+  estrella.style.left= (Math.random() * innerWidth - 50 - size) + 'px';
+  estrella.style.top= (Math.random() * innerHeight - 100 - size) + 'px';
+
+  lienzo.appendChild(estrella);
+  setTimeout(() =>{
+    estrella.remove()
+  },3000)
+
+}
+
+setInterval(crearEstrellas,20)
+
+
 /* Ocultar proyectos */
 
 function mostrarIA() {

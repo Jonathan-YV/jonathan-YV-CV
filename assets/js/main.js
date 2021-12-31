@@ -6,7 +6,7 @@ const scrollY = document.querySelector('body');
 setTimeout(() =>{
   loader.style.display = 'none'
 scrollY.style.overflowY = 'visible'
-},3000)
+},3500)
 
 
 /* Menu de hamburgues */

@@ -68,7 +68,7 @@ svg circle{
   stroke-linecap: round;
   stroke-dasharray: 400;
   stroke-dashoffset: 400;
-  animation: animateC 3.5s linear;
+  animation: animateC 6s linear;
 }
 
 @keyframes animateC{
@@ -76,9 +76,19 @@ svg circle{
   {
     stroke-dashoffset: 400;
   }
-  40%
+  20%
   {
-    stroke-dashoffset: 350;
+    stroke-dashoffset: 380;
+  }
+
+  30%
+  {
+    stroke-dashoffset: 340;
+  }
+
+  50%
+  {
+    stroke-dashoffset: 1;
   }
   100%
   {

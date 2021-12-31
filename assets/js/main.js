@@ -1,3 +1,14 @@
+/* Loader */
+
+const loader = document.querySelector('.carga');
+const scrollY = document.querySelector('body');
+
+setTimeout(() =>{
+  loader.style.display = 'none'
+scrollY.style.overflowY = 'visible'
+},3000)
+
+
 /* Menu de hamburgues */
 
 const navToggle = document.querySelector(".nav-toggle");

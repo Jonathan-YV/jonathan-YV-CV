@@ -9,16 +9,20 @@ navToggle.addEventListener("click", () => {
 
 /* Animacion inicio */
 
+
+
 function crearEstrellas(){
   const lienzo = document.querySelector('.imagenInicio');
   const estrella = document.createElement('span');
+
 
   let size = Math.random() * 4;
   estrella.style.width = 5 + size + 'px';
   estrella.style.height = 5 + size + 'px';
 
-  estrella.style.left= (Math.random() * innerWidth - 50 - size) + 'px';
-  estrella.style.top= (Math.random() * innerHeight - 100 - size) + 'px';
+
+  estrella.style.left= (Math.random() * lienzo.clientWidth - size) + 'px';
+  estrella.style.top= (Math.random() * lienzo.clientHeight - size) + 'px';
 
   lienzo.appendChild(estrella);
   setTimeout(() =>{

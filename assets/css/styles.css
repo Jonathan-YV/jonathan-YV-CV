@@ -22,6 +22,7 @@
 
 html {
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,6 +30,7 @@ body {
   background-color: var(--fondo);
   overflow-x: hidden;
   overflow-y: hidden;
+  position: relative;
 }
 
 /*-------------------------------------- Loader --------------------------------------*/
@@ -451,6 +453,33 @@ progress::-webkit-progress-bar {
   border-radius: 20px;
 }
 
+.conC{
+  margin: 4rem 50px 0px 50px;
+}
+
+.carousel{
+  display: grid;
+  max-width: 1340px;
+  gap: 1.5rem;
+  grid-auto-rows: 8rem;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.carousel-item{
+  width: 8rem;
+  height: 8rem;
+}
+
+.carousel-item img{
+  height: 100%;
+  
+  object-position: center;
+  object-fit: cover;
+
+}
+
 /*-------------------------------------- Proyectos --------------------------------------*/
 
 .botonesTipos {
@@ -807,6 +836,9 @@ progress::-webkit-progress-bar {
   .img-show {
     max-width: 90%;
   }
+
+  
+  
 }
 
 @media (max-width: 576px) {
@@ -841,5 +873,21 @@ progress::-webkit-progress-bar {
   .tecnicas,
   .blandas {
     margin-right: 40px;
+  }
+
+  .conC{
+    margin: 3rem 50px 0px 50px;
+  }
+
+  .carousel{
+    gap: 2rem;
+    grid-auto-rows: 5rem;
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+    
+  }
+
+  .carousel-item{
+    width: 5rem;
+    height: 5rem;
   }
 }

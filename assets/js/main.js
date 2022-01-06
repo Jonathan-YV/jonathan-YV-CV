@@ -12,6 +12,7 @@ setTimeout(() =>{
 },4400)
 
 
+
 /* Menu de hamburgues */
 
 const navToggle = document.querySelector(".nav-toggle");
@@ -50,6 +51,18 @@ if (lienzo.clientWidth <= 576 ){
 } else{
   setInterval(crearEstrellas,20)
 }
+
+/* Menu transparente */
+
+const navbar = document.querySelector('.header')
+window.onscroll = function() {
+  if (window.scrollY <= lienzo.clientHeight){
+    navbar.style.backgroundColor = "rgba(0, 0, 0, 0.616)";
+  }
+  else{
+    navbar.style.backgroundColor = "rgb(0, 0, 0)"; 
+  }
+};
 
 
 /* Ocultar proyectos */

@@ -295,19 +295,41 @@ span{
 .redes-sociales {
   padding-top: 35px;
   font-size: 2.5rem;
+  display: flex;
+  align-items: flex-start;
 }
 
 .redes-sociales a {
   text-decoration: none;
-  color: var(--blanco);
+  
 }
 
-.redes-sociales a:hover {
+
+.separar {
+  margin-left: 20px;
+}
+
+.boton-CV{
+  font-size: 1.2rem;
+  height: auto;
+  color: black;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.iconos-red{
+  color: white;
+}
+
+.iconos-red:hover{
   color: var(--rosa);
 }
 
-.separar {
-  padding-left: 20px;
+.boton-CV:hover{
+  color: black;
+  background-color: var(--rosa);
 }
 
 .deslizar {

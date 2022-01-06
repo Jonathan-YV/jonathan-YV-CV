@@ -198,6 +198,10 @@ svg circle{
   color: var(--rosa);
 }
 
+.nav-inicio:hover{
+  color: white;
+}
+
 .nav-contacto {
   border: 2px solid var(--rosa);
   border-radius: 10px;
@@ -753,12 +757,7 @@ progress::-webkit-progress-bar {
   }
 
   .nav-menu-link {
-    font-size: 2rem;
-  }
-
-  .nav-menu-link:hover {
-    background: none;
-    color: darkblue;
+    
   }
 
   .nav-toggle {
@@ -771,6 +770,10 @@ progress::-webkit-progress-bar {
 
   .nav-inicio {
     color: var(--blanco);
+  }
+
+  .nav-inicio:hover{
+    color: white;
   }
 
   .nav-contacto {

@@ -52,6 +52,44 @@ if (lienzo.clientWidth <= 576 ){
   setInterval(crearEstrellas,20)
 }
 
+/* Puesto */
+
+let i = 0;
+let j = 0;
+const puestos = ["Java Full Stack   ", "Machine Learning   "]
+let puesto = puestos[j];
+
+setTimeout(escritura,4500)
+
+function escritura() {
+  if (i < puesto.length) {
+    document.querySelector(".puesto-dev").innerHTML += puesto.charAt(i);
+    i++;
+    setTimeout(escritura, 150);
+  }
+  else{
+    borrar()
+  }
+}
+
+function borrar() {
+  if (i > 0 ) {
+    puesto = puesto.slice(0,-1)
+    document.querySelector(".puesto-dev").innerHTML = puesto;
+    i--;
+    setTimeout(borrar, 50);
+  }
+  else{
+    if(j == puestos.length - 1){
+      j = 0;
+    }else{
+      j++;
+    } 
+    puesto = puestos[j]
+    escritura()
+  }
+}
+
 /* Menu transparente */
 
 const navbar = document.querySelector('.header')

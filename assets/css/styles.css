@@ -366,6 +366,7 @@ span{
   font-size: var(--tam-subtitulos);
   margin-left: 40px;
   color: var(--blanco);
+  margin-bottom: 50px;
 }
 
 .cuadroUno {
@@ -527,9 +528,6 @@ progress::-webkit-progress-bar {
   cursor: pointer;
 }
 
-#web {
-  color: var(--rosa);
-}
 
 .grid-proyectos {
   display: grid;
@@ -575,22 +573,6 @@ progress::-webkit-progress-bar {
   border-radius: 10px;
 }
 
-#ia-proyectos {
-  display: none;
-}
-
-#web-proyectos {
-  display: grid;
-}
-
-#escritos-proyectos {
-  display: none;
-}
-
-#dibujos-proyectos {
-  display: none;
-}
-
 .container-img {
   position: fixed;
   height: 100%;
@@ -623,6 +605,44 @@ progress::-webkit-progress-bar {
 .show {
   transform: scale(1);
 }
+
+/* -------------------------------------Certificados ---------------------------------- */
+
+.item-certificado{
+  background-image: url(/assets/img/certificados/HackerRank.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-certificados{
+  object-fit: cover;
+  object-position: center;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.lateral-certificado{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.texto-certificado{
+  padding: 10px;
+  width: 100%;
+  font-size: var(--tam-pequeño);
+  text-align: center;
+  color: var(--blanco);
+}
+
+.tarjetas-certificados{
+  text-decoration: none;
+  background-color: var(--gris);
+  border-radius: 10px;
+}
+
 
 /*-------------------------------------- Contacto --------------------------------------*/
 
